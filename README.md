@@ -8,5 +8,5 @@ simple website that help you to know your country currency exchange rates.
 <br>Gmail : mohamedermili5@gmail.com;
 
 
-<img src='images/smartmockups_l6khfkp5.png'>
 <img src='images/screenshot3.png'>
+<img src='images/screenshot2.png'>
