@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+  --primary-color:#fff;
+  --main-bg-image:radial-gradient( circle farthest-corner at 10% 20%,  rgb(23, 37, 51) 0%, rgba(34,34,34,1) 90% );
+  --main-letter-spacing : 1.5px;
+  --main-bg-btn : linear-gradient(to right, rgb(241, 34, 34), rgb(255, 30, 255), rgb(104, 0, 104));
+  --main-txt-shadow:2px 2px 2px #0000009c;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Righteous', cursive;
+  letter-spacing: var(--main-letter-spacing);
+}
+input:focus, button:focus, select:focus {
+  outline: none;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:var(--main-bg-image);
+  padding:0 20px;
+}
+
+h1{
+  text-align: center;
+  color: var(--primary-color);
+  padding-bottom: 20px;
+  text-transform:capitalize;
+  font-size: 55px;
+  font-weight: 400;
+}
+p{
+  text-align: center;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: var(--main-letter-spacing);
+  margin-bottom: 30px;
+}
+
+.swap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swap i{
+  font-size: 25px;
+  color: #cdcfd0;
+  opacity: 0.7;
+  margin-left: 20px;
+  transform: rotate(90deg);
+}
+.swap i:hover{
+  opacity: 1;
+}
+
+.swap .rate{
+  color: var(--primary-color);
+  text-shadow: var(--main-txt-shadow);
+  letter-spacing: var(--main-letter-spacing);
+}
+
+.currency{
+  padding: 30px 0;
+  display: flex;
+  min-width: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media(max-width:600px){
+  .currency{
+  min-width: 300px;
+  }
+}
+.currency select{
+  text-align: center;
+  padding: 8px 5px 8px 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 2px  solid #ff33699e;
+  border-radius: 18px;
+  text-shadow: var(--main-txt-shadow);
+}
+
+.currency-one{
+  color: #fff;
+}
+.currency-two{
+  color: #fff;
+}
+
+.currency select > option{
+  background-color:rgba(140, 9, 50, 0.853);
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.currency input{
+  font-size: 25px;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  border: none;
+  border-radius:50% ;
+  background-image:var(--main-bg-image);
+  color:#fff;
+  }
+.border{
+  width: 140px;
+  height: 140px;
+  background: var(--main-bg-btn);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
